@@ -34,13 +34,11 @@ def rook():
   steps = []
   steps.extend(move(position, '+', 0, '', '*'))
   steps.extend(move(position, '', '*', '+', 0))
-  steps.extend(move(position, '', '*', '', '*'))
 
   # Remove position from array
   while position in steps: steps.remove(position)
  
   print ', '.join(steps)
-  pos = list(position)
 
 def knight():
   steps = []
